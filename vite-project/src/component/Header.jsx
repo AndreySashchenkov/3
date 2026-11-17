@@ -10,7 +10,7 @@ function Header({ switchTheme }) { // Исправил опечатку
     return (
         <span className={style.headerWrapper}>
             {/* <img className={style.img} src="..." alt="" /> */}
-            <h1 className={style.siteTitle}>MOE MOE GRAMM</h1>
+            <h1 className={style.siteTitle}>Не совсем MOЁ MOЁ GRAMM</h1>
              <button className={style.switchBtnTheme} onClick={switchTheme}>
             {
                 theme === "dark" ? <img src={light} alt="light" /> : <img src={dark} alt="dark" />

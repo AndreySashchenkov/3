@@ -30,7 +30,7 @@ const createFakeLoadingComponent = (text, delay) => {
 
 const SecondPage = createFakeLoadingComponent(
   "Lorem ipsum dolor sit amet consectetur adipisicing elit...", 
-  1000
+  5000
 );
 
 function Core() {
@@ -59,7 +59,7 @@ function Core() {
 
                 <Suspense fallback={
                     <div style={{ textAlign: "center", padding: "100px 20px", color: "inherit" }}>
-                        <h2 style={{ fontSize: "2rem" }}>⏳ Загрузка страницы...</h2>
+                        <h2 style={{ fontSize: "2rem" }}>⏳ Хуй... пиздец...</h2>
                         <div style={{
                             margin: "20px auto",
                             width: "50px",
