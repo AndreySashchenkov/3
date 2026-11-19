@@ -4,6 +4,7 @@ import { currentTheme } from "./Context";
 import Header from "./component/Header"; 
 import Footer from "./component/Footer"; 
 import style from "./App.module.css"; 
+import About from "./About.jsx";
 
 const App = lazy(() => import("./App"));
 const Dop = lazy(() => import("./Dop"));
@@ -55,6 +56,9 @@ function Core() {
                     <NavLink to="/3" className={({ isActive }) => isActive ? `${style.navLink} ${style.activeLink}` : style.navLink}>
                         На другую
                     </NavLink>
+                    <NavLink to="/about" className={({ isActive }) => isActive ? `${style.navLink} ${style.activeLink}` : style.navLink}>
+                        Обо мне или о них
+                    </NavLink>
                 </div>
 
                 <Suspense fallback={
@@ -79,6 +83,7 @@ function Core() {
                 }>
                     <Routes>
                         <Route path="/" element={<App />} />
+                        <Route path="/about" element={<About testText={"FFASdsfsdgfjhsdgdsg"}/>} />
                         <Route path="/second" element={<SecondPage />} />
                         <Route path="/3" element={<Dop />} />
                     </Routes>
